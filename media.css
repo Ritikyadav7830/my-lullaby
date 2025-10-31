@@ -1,0 +1,90 @@
+@media (min-width: 340px) and (max-width: 400px) {
+    .form {
+        max-width: 100%;
+        margin: 2rem auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0 0 0;
+        width: 80%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .condition {
+        margin-top: 0rem;
+        max-width: 100%;
+    }
+
+
+    input[type="text"] {
+        border: 1.5px solid #ccc;
+        border-radius: 5px;
+        padding: 4px 17px;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type="number"] {
+        border: 1.5px solid #ccc;
+        border-radius: 5px;
+        padding: 4px 17px;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .start-button {
+        margin: 2rem auto 2rem auto;
+        gap: 10px;
+    }
+
+
+    .blue-Arrow {
+        width: 86.52129px;
+        height: 89.52129px;
+        top: 22%;
+        left: 21%;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .pink-Arrow {
+        width: 86.52129px;
+        height: 89.52129px;
+        top: 22%;
+        left: 21%;
+        opacity: 1;
+        position: absolute;
+    }
+
+}
+
+@media (min-width: 440px) and (max-width: 550px) {
+
+    .Logo-container {
+        gap: 35%;
+    }
+}
+
+
+
+
+ /* @media (min-width: 900px) {
+        .qr-section {
+            display: block;
+        }
+    } */
+
+
+

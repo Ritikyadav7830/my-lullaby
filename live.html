@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>My Lulla By</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    
+    <section class="home-Page common-section">
+        <div class="main-container" id="content">
+
+                    <!-- QR Code Section -->
+                    <div class="qr-section">
+                        <h3>Scan this QR to open on your phone</h3>
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://ritikyadav7830.github.io/my-lullaby/" 
+                             alt="Scan QR" id="qrCode">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer d-flex justify-content-between ">
+                <div class="">
+                    <span id="Privacy-Policy">Privacy Policy</span>
+                    <span id="Terms-Conditions">T&C</span>
+                </div>
+                <div>
+                    <span>©2024, Johnsons Baby</span>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Rest of your existing sections (SignIn-Page, select-baby-section, etc.) stay unchanged -->
+    <!-- ...existing code for SignIn-Page, select-baby-section, Pick-a-lulls-by, Privacy-Policy, Terms-Conditions, Complete -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+    <!-- CSS for QR Code -->
+    <style>
+    .qr-section {
+        display: none; /* Default hide */
+        text-align: center;
+        margin: 30px 0 0 0;
+    }
+
+    .qr-section img {
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        padding: 10px;
+        background: #fff;
+        max-width: 180px;
+        height: auto;
+    }
+
+    .qr-section h3 {
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    /* Show QR only on desktop (>1024px) */
+    @media (min-width: 1025px) {
+        .qr-section {
+            display: block;
+        }
+    }
+    </style>
+
+</body>
+
+</html>
