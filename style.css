@@ -952,14 +952,16 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* background dark + transparent */
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.7) 80%);
+backdrop-filter: blur(5px);
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 30; /* ऊपर दिखे */
+  z-index: 30; 
 }
 
 .Pick-a-lulls-by.loading-active {
-  opacity: 0.5; /* section dim हो जाए */
+  opacity: 0.5; 
   pointer-events: none; /* disable interaction */
 }
