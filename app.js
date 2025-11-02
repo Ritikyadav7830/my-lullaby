@@ -393,7 +393,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (window.innerWidth > 1024) {
     showScreen(".qr");
   } else {
-    showScreen(".Complete");
+    showScreen(".home-Page");
   }
 });
 
