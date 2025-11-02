@@ -1,14 +1,38 @@
 
  document.getElementById('startBtn').addEventListener ('click', function () {
 
-  const Babyform = document.getElementById('BabyformDetails');
-  const choiceForm = document.getElementById('choice-form');
-   const formData = document.getElementById('formDetails');
       showScreen(".SignIn-Page")
-        choiceForm.reset();
-        formData.reset();
-      Babyform.reset();
+    
   });
+
+  
+//  document.getElementById('baby-btn').addEventListener ('click', function () {
+
+//   const PinkArrow = document.querySelector('.Pink-Arrow');
+// const SkyBlueArrow = document.querySelector('.skyBlue-Arrow');
+// const BlueArrow = document.querySelector('.Blue-Arrow');
+// const YellowArrow = document.querySelector('.yellow-Arrow');
+//  let SelectedChoice = "";
+// const choice1 = document.getElementById('choice1');
+// const choice2 = document.getElementById('choice2');
+// const choice3 = document.getElementById('choice3');
+// const choice4 = document.getElementById('choice4');
+// const choiceBox = document.querySelector('.choice-box')
+
+
+//   choiceBox.style.display = 'none';
+//   PinkArrow.style.display = 'none';
+//   SkyBlueArrow.style.display = 'none';
+//   BlueArrow.style.display = 'none';
+//   YellowArrow.style.display = 'none';
+//    SelectedChoice = 'null';
+//    choice1.classList.remove('selected');
+//   choice2.classList.remove('selected');
+//   choice3.classList.remove('selected');
+//   choice4.classList.remove('selected');
+//  })
+
+
 
 // back Arrow home page ke liye
 document.querySelector('.SignIn-arrow').addEventListener ('click', function () {
@@ -50,8 +74,8 @@ document.querySelector('.baby-Arrow').addEventListener ('click', function () {''
 document.querySelector('.choice-Arrow').addEventListener ('click', function () {''
  
   const Babyform = document.getElementById('BabyformDetails');
-//   const blueArrow = document.querySelector('.blue-Arrow');
-// const pinkArrow = document.querySelector('.pink-Arrow');
+  const blueArrow = document.querySelector('.blue-Arrow');
+const pinkArrow = document.querySelector('.pink-Arrow');
  const hiddenDiv = document.querySelector('.hidden-baby-div');
  const hiddenBabyName = document.querySelector('.baby-name');
    const TeddySelectionValidation = document.querySelector('.Teddy-selection-validation');
@@ -64,8 +88,8 @@ document.querySelector('.choice-Arrow').addEventListener ('click', function () {
     hiddenDiv.style.display = 'none';
     hiddenBabyName.style.display = 'none';
     TeddySelectionValidation.style.display = 'none';
-  //  blueArrow.style.display = 'none';
-  //  pinkArrow.style.display = 'none';
+   blueArrow.style.display = 'none';
+   pinkArrow.style.display = 'none';
 
        showScreen(".select-baby-section")
       Babyform.reset();
@@ -90,13 +114,12 @@ const formData = document.getElementById('formDetails');
 formData.addEventListener('submit', function (e) {
   e.preventDefault();
 
-const SignInPage = document.querySelector('.SignIn-Page');
+
   const name = document.getElementById('name').value.trim();
   const mobile = document.getElementById('mobile').value.trim();
   const agree = document.getElementById('agree').checked;
   const hiddenDiv = document.querySelector('.hidden-div');
   const mobileInput = document.getElementById('mobile');
-    const BabySection = document.querySelector('.select-baby-section');
     const hiddenValue = document.querySelector('.hidden-div2');
   
 
@@ -271,17 +294,16 @@ const choiceForm = document.getElementById('choice-form');
 
 choiceForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  
-   const PickALullsBy = document.querySelector('.Pick-a-lulls-by');
-   const complete = document.querySelector('.Complete');
-   const choiceBox = document.querySelector('.choice-box');
 
+   const choiceBox = document.querySelector('.choice-box');
+   
 
   // ✅ Teddy selection validation
   if (!SelectedChoice) {
     choiceBox.style.display = 'block';
+    console.log("1")
     return;
-  }
+  } 
   else {
     showScreen(".Complete");
   }
@@ -291,50 +313,66 @@ choiceForm.addEventListener('submit', function (e) {
 
 // Privacy-Policy pr click krne pr action
 
-// let Privacy = document.getElementById("Privacy-Policy");
+let PrivacyArrow = document.querySelector(".Privacy-arrow");
 
-// Privacy.addEventListener('click', function () {
-//  showScreen(".Privacy-Policy");
-// });
-
-
-let HomePrivacy = document.getElementById("Home-Privacy-Policy");
-
-
-HomePrivacy.addEventListener('click', function () {
- showScreen(".Privacy-Policy");
-});
-
-
-
-
-// home privacy arrow pr click krne pr
-document.querySelector('.Privacy-arrow').addEventListener ('click', function () {''
+PrivacyArrow.addEventListener('click', function () {
  
-showScreen(".home-Page");
+  let PrivacyContainer = document.querySelector(".Privacy-Policy");
 
+  PrivacyContainer.classList.add('d-none');
+     PrivacyContainer.style.zIndex = "";
+     PrivacyContainer.style.position = "";
+     PrivacyContainer.style.top = "";
 });
+
+let Privacy = document.getElementById("Privacy-Policy");
+
+Privacy.addEventListener('click', function () {
+ 
+let PrivacyContainer = document.querySelector(".Privacy-Policy");
+
+  PrivacyContainer.classList.remove('d-none');
+     PrivacyContainer.style.zIndex = "100";
+     PrivacyContainer.style.position = "fixed";
+     PrivacyContainer.style.top = "0";
+});
+
+
+
 
 
 // Terms arrow pr click krne pr
- const termsArrow= document.querySelector('.Terms-arrow');
+ const termsArrow= document.querySelector(".Terms-arrow");
  
- termsArrow.addEventListener ('click', function () {''
-let termsConditions = document.querySelector(".Terms-Conditions");
+ termsArrow.addEventListener ('click', function () {
 
-   showScreen(".Terms-Conditions");
+  let termsConditionsContainer = document.querySelector(".Terms-Conditions");
+   
+
+ termsConditionsContainer.classList.add('d-none');
+    termsConditionsContainer.style.zIndex = "";
+    termsConditionsContainer.style.position = "";
+    termsConditionsContainer.style.top = "";
+    
+   
 
 });
 
 
 // Terms-Conditions pr click krne pr action
 
-let termsConditions = document.querySelector(".Terms-Conditions");
-console.log(termsConditions)
-
+let termsConditions = document.getElementById("Terms-Conditions");
 
   termsConditions.addEventListener('click', function () {
- showScreen(".Terms-Conditions");
+
+    let termsConditionsContainer = document.querySelector(".Terms-Conditions");
+
+
+    termsConditionsContainer.classList.remove('d-none');
+    termsConditionsContainer.style.zIndex = "100";
+    termsConditionsContainer.style.position = "fixed";
+    termsConditionsContainer.style.top = "0";
+    
 
 });
 
@@ -355,15 +393,12 @@ document.addEventListener("DOMContentLoaded", function() {
   if (window.innerWidth > 1024) {
     showScreen(".qr");
   } else {
-    showScreen(".home-Page ");
+    showScreen(".Complete");
   }
 });
 
 
 // video play krne ke liye
-
-
-
     const playBtn = document.querySelector(".play-img");
     const thumbnail = document.querySelector(".thumbnail");
     const video = document.querySelector(".main-video");
@@ -372,7 +407,6 @@ document.addEventListener("DOMContentLoaded", function() {
       
       thumbnail.style.display = "none";
       playBtn.style.display = "none";
-
       
       video.style.display = "block";
       video.play();
@@ -381,9 +415,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // video ko download krne ke liye function
-
-
- 
     const downloadBtn = document.querySelector(".download-button");
 
     downloadBtn.addEventListener("click", function() {
@@ -406,3 +437,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+     const Homebtn = document.getElementById("home-btn");
+     Homebtn.addEventListener("click", function() {
+        
+      showScreen('.home-Page')
+     });
