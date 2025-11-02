@@ -487,13 +487,13 @@ const pinkArrow = document.querySelector('.pink-Arrow');
 const pickSection = document.querySelector('.Pick-a-lulls-by');
 const loadingOverlay = pickSection.querySelector('.loading-overlay');
 
-// Loading दिखाने वाला function
+
 function showLoading() {
   pickSection.classList.add('loading-active');
   loadingOverlay.classList.remove('d-none');
 }
 
-// Loading हटाने वाला function
+
 function hideLoading() {
   pickSection.classList.remove('loading-active');
   loadingOverlay.classList.add('d-none');
