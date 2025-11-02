@@ -945,3 +945,21 @@ section {
     cursor: pointer;
     width: 80%;
 }
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* background dark + transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30; /* ऊपर दिखे */
+}
+
+.Pick-a-lulls-by.loading-active {
+  opacity: 0.5; /* section dim हो जाए */
+  pointer-events: none; /* disable interaction */
+}
