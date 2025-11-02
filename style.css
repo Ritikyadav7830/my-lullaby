@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 96%;
+    height: 96vh;
     background-color: #8FC9E9 !important;
 }
 
@@ -148,7 +148,7 @@
 .footer {
     Width: 100%;
     padding: 0 12px;
-    Height: 4%;
+    Height: 4vh;
     position: fixed;
     bottom: 0;
     z-index: 2;
@@ -181,6 +181,7 @@
     height: 96vh;
     background-color: #8FC9E9 !important;
     position: relative;
+    overflow: auto;
 }
 
 .signIn-container {
@@ -610,7 +611,7 @@ input[type="number"]:focus {
 
 .privacy-container {
     width: 100vw;
-    height: 97vh;
+    height: 96vh;
     background-color: #E5F5FD !important;
     overflow: auto;
 }
@@ -788,7 +789,7 @@ input[type="number"]:focus {
     /* top: 50%; */
     /* left: 83%; */
     right: -7%;
-    bottom: 40%;
+    bottom: 32%;
     transform: translate(-50%, -50%);
     border: 2px solid white;
     border-radius: 50%;
@@ -918,4 +919,29 @@ section {
 .completeHearts img {
     display: block;
     width: 100%;
+}
+
+.home-btn {
+    width: 100%;
+    height: 20%;
+     position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-sizing: border-box;
+}
+.home-btn button{
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+     color: #005EB8;
+    font-size: 1.2rem;
+    height: 45px;
+    font-weight: 500;
+    font-family: "Johnsons Baby";
+    cursor: pointer;
+    width: 80%;
 }
