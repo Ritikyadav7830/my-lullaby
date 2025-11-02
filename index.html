@@ -1,469 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>My Lulla By</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-</head>
-
-<body>
-
-    <section class="qr common-section">
-        <!-- QR code section (only visible on desktop) -->
-<div class="qr-section d-none d-md-block" id="qrSection">
-  <h3>Scan this QR to view on your phone</h3>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://github.com/Ritikyadav7830/my-lullaby" alt="Scan QR">
-</div>
-
-    </section>
-    
-    <section class="home-Page common-section">
-        <div class="main-container" id="content">
-
-            <div class="image-container">
-                <div class="cloud-image1">
-                    <img src="assists/images/cloud1.png" alt="">
-                </div>
-                <div class="cloud-image2">
-                    </aside>
-                    <img src="assists/svg/Vector.svg">
-                </div>
-                <div class="Isolation-img">
-                    <img src="assists/images/Isolation_Mode.png" alt="">
-                </div>
-
-                <div class="text-container">
-                    <div class="inner-image">
-                        <img src="./assists/images/image9.png" alt="">
-                    </div>
-                    <p>Create your little one's very own lullaby!</p>
-                    <p class="p">Sung With Love, <span>& POWERED BY AI</span></p>
-
-
-                    <button class="start-btn" id="startBtn">
-                        Start
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-
-                </div>
-            </div>
-
-
-
-            <div class="footer d-flex justify-content-between ">
-                <div class="">
-                    <span id="Privacy-Policy">Privacy Policy</span>
-                    <span id="Terms-Conditions">T&C</span>
-                </div>
-                <div>
-                    <span>©2024, Johnsons Baby</span>
-                </div>
-            </div>
-        </div>
-    </section> 
-    
-    <section class="SignIn-Page  common-section d-none">
-        <div class="color">
-            <div class="signIn-container">
-
-                <div class="Logo-container">
-                    <button class="SignIn-arrow" id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <div class="logo">
-                        <img src="assists/images/image8.png" alt="">
-                    </div>
-                    <span></span>
-                </div>
-
-                <div class="signIn-info">
-                    <p>Tell Us About You</p>
-                </div>
-
-
-
-
-
-                <div class="form">
-                    <form id="formDetails">
-                        <div class="form-group">
-                            <label for="name">Your Name <sup style="color: red;">*</sup></label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="mobile">Mobile Number <sup style="color: red;">*</sup></label>
-                            <input type="number" id="mobile">
-                            <div class="hidden-div">
-                                <p>enter a valid 10 digit number</p>
-                            </div>
-                        </div>
-                        <div class="condition">
-                            <input type="checkbox" id="agree">
-                            <label for="agree">
-                                I agree to <span>terms & conditions</span>
-                            </label>
-                        </div>
-
-
-                        <button type="submit" class="start-button" id="startBtn">
-                            Start
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
-
-
-                <div class="hearts">
-                    <img src="assists/images/Hearts.png" alt="">
-                </div>
-
-            </div>
-
-
-        </div>
-        <div class="footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span>T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
-    </section> 
-
-
-     <section class="select-baby-section common-section d-none">
-        <div class="color">
-            <div class="signIn-container">
-
-                <div class="Logo-container">
-                    <button class="baby-Arrow" id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <div class="logo">
-                        <img src="assists/images/image8.png" alt="">
-                    </div>
-                    <div></div>
-                </div>
-
-                <div class="baby-info">
-                    <p>Introduce us to your little one</p>
-                </div>
-
-
-                <div class="form">
-                    <form id="BabyformDetails">
-                        <div class="form-group">
-                            <label for="BabyName">Name of the Baby <sup style="color: red;">*</sup></label>
-
-                            <div class="input-wrapper">
-                                <input type="text" id="BabyName" maxlength="8">
-                                <span id="charCount" class="char-count">0 / 8</span>
-                                <div>
-                                    <p class="Hidden-Baby-Name">Please enter your baby's name.</p>
-                                </div>
-                            </div>
-
-                            <div class="hidden-baby-div">
-                                <p>use baby’s nickname incase name exceeds character limit</p>
-                            </div>
-                        </div>
-
-
-
-                        <div>
-                            <p>Choose a teddy</p>
-                            <div class="teddy-grid">
-
-                                <div class="teddy-item">
-                                    <img id="Teddy1" src="./assists/images/teddy1.png" alt="">
-                                    <div class="blue-Arrow ">
-                                        <img src="assists/images/blue.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="teddy-item">
-                                    <img id="Teddy2" src="./assists/images/teddy2.png" alt="">
-                                    <div class="pink-Arrow">
-                                        <img src="assists/images/pink.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-
-
-                        <button type="submit" class="start-button">
-                            Start
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
-
-
-                <div class="hearts">
-                    <img src="assists/images/Hearts.png" alt="">
-                </div>
-
-            </div>
-
-
-        </div>
-        <div class="footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span>T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
-    </section> 
-
-
-     <section class="Pick-a-lulls-by common-section d-none">
-        <div class="color">
-            <div class="choice-container">
-
-                <div class="Logo-container">
-                    <button class="choice-Arrow" id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <div class="logo">
-                        <img src="assists/images/image8.png" alt="">
-                    </div>
-                    <div></div>
-                </div>
-
-                <div class="choice-info">
-                    <p>Pick A Lullaby That Your Baby Will Love</p>
-                </div>
-
-
-                <form action="#" id="choice-form">
-                    <div class="choice-grid">
-
-                        <div class="choice-item">
-                            <img id="choice1" src="./assists/images/choice1.png" alt="">
-                            <div class="Pink-Arrow">
-                                <img src="assists/images/pink.png" alt="">
-                            </div>
-                        </div>
-                        <div class="choice-item">
-                            <img id="choice2" src="./assists/images/choice2.png" alt="">
-                            <div class="skyBlue-Arrow">
-                                <img src="assists/images/skyblue.png" alt="">
-                            </div>
-                        </div>
-                        <div class="choice-item">
-                            <img id="choice3" src="./assists/images/choice3.png" alt="">
-                            <div class="Blue-Arrow">
-                                <img src="assists/images/blue.png" alt="">
-                            </div>
-                        </div>
-                        <div class="choice-item">
-                            <img id="choice4" src="./assists/images/choice4.png" alt="">
-                            <div class="yellow-Arrow">
-                                <img src="assists/images/yellow.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="start-button" id="choice-btn">
-                        Start
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </form>
-
-
-            </div>
-
-        </div>
-
-
-        <div class="choice-hearts">
-            <img src="assists/images/Hearts.png" alt="">
-        </div>
-
-        <div class="footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
-    </section> 
-
-
-     <section class="Privacy-Policy common-section d-none">
-
-        <div class="privacy-container">
-            <button class="Privacy-arrow" id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-            <h2>Privacy Policy</h2>
-
-            <div class="pera1">
-                <h3>Last updated: June 2019</h3>
-                <p>JNTL Consumer Health (India) Private Limited cares about your privacy and wants you to be familiar
-                    with how we collect, use, and disclose information. This Privacy Policy describes our practices in
-                    connection with information that we or our service providers collect through the website or
-                    application (hereinafter the “Service”) operated and controlled by us from which you are accessing
-                    this Privacy Policy. By providing personal information to us or by using the Service, you
-                    acknowledge that you have read and understand this Privacy Policy.</p>
-            </div>
-
-
-            <div class="pera2">
-                <h3>INFORMATION COLLECTION</h3>
-                <p>We may ask you to submit personal information in order for you to benefit from certain features (such
-                    as newsletter subscriptions, tips/pointers, or order processing) or to participate in a particular
-                    activity (such as sweepstakes or other promotions).  You will be informed what information is
-                    required and what information is optional.
-                </p>
-
-                <p>
-                    We may combine the information you submit with other information we have collected from you, whether
-                    on or offline, including, for example, your purchase history.  We may also combine it with
-                    information we receive about you from other sources, such as other JNTL Consumer Health (India)
-                    Private Limited associates, publicly available information sources (including information from your
-                    publicly available social media profiles), and other third-party information providers.
-                </p>
-
-                <p>
-                    If you submit any personal information relating to another individual to us, you represent that you
-                    have the authority to do so and to permit us to use the information in accordance with this Privacy
-                    Policy.</p>
-            </div>
-
-        </div>
-        <div class="privacy-footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
-
-    </section> 
-
-
-     <section class="Terms-Conditions common-section d-none">
-        <div class="terms-container">
-            <button class="Terms-arrow" id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-            <h2>Terms & Conditions</h2>
-
-            <div class="pera">
-                <ol type="1">
-                    <li>The contest is valid for 3 months between 1st Sept 2017 – 30th Nov 2017 </li>
-
-                    <li> Only 1 entry allowed per consumer for the contest (via a unique mobile #)</li>
-                    <li> Only complete entries with appropriate slogan (no gibberish) & picture (kid with shampoo pack)
-                        uploaded
-                        will be considered as valid entries. </li>
-                    <li> 50 consumers win a ‘Disney Frozen bath towel’ on daily basis for the contest period.
-
-                    </li>
-                    <li> 3 lucky winners win a chance to experience the magic of Disney Frozen in Hong Kong**.</li>
-                    <ol type="a" class="ol">
-                        <li> Date options for travel: 26th – 28th Jan or 9th – 11th Feb 2018 </li>
-                        <li>
-                            The trip to include the following for 1 kid (3-11 years) & 2 accompanying parents/
-                            guardians:
-                            Air
-                            tickets – to & fro from Hong Kong, Taxi – to & fro all through the 3 days, 2 Nights stay at
-                            Hotel,
-                            meals (at Hotel) / meal vouchers (in Disneyland), Standard 1-day Disneyland park tickets**
-                        </li>
-                    </ol>
-                    </li>
-                    <li>The winners will be chosen for both above in the following procedure:
-                        <ol type="1" class="ol2">
-                            <li>Appropriate slogans/ pictures to be filtered for (blanks/ inappropriate slogans to be
-                                filtered)
-                            </li>
-                            <li> All appropriate slogans to be chronologically arranged </li>
-                            <li> Random selection from appropriate slogans via random.org number generator</li>
-                        </ol>
-                    </li>
-                    <li>The contest applies to all within the geographical jurisdiction of India only. The offer is open
-                        to
-                        residents of India, except employees of JNTL Consumer Health (India) Private Limited
-                        (“Organiser”),
-                        its
-                        agents and distributors and their immediate families.</li>
-                    <li>The decision of the Organizer will be final and binding and no claim of whatsoever nature will
-                        be
-                        entertained </li>
-                    <li> Participants shall be informed of further steps if any, to be complied before receipt of
-                        prize. 
-                    </li>
-                </ol>
-            </div>
-
-        </div>
-
-
-        <div class="privacy-footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
-    </section> 
-
-
-    <section class="Complete common-section d-none">
-        <div class="complete-container">
-            <div class="logo-container">
-                <div class="complete-logo">
-                    <img src="assists/images/complete.png" alt="">
-                </div>
-
-                <div class="logo">
-                    <img src="assists/images/image9.png" alt="">
-                </div>
-            </div>
-
-            <div class="video">
-                <div class="video-container">
-                    <img src="assists/images/completelogo.png" alt="">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="privacy-footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-</body>
-
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -495,69 +29,49 @@
             <div class="qr-section">
                 <h3>Scan this QR to open on your phone</h3>
                 <div class="qr-img">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://ritikyadav7830.github.io/my-lullaby/"
-                    alt="Scan QR" id="qrCode">
-                    </div>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://ritikyadav7830.github.io/my-lullaby/"
+                        alt="Scan QR" id="qrCode">
+                </div>
             </div>
 
         </div>
 
-
-        <div class="privacy-footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
 
     </section>
 
-    <section class="home-Page common-section">
+    <section class="home-Page common-section ">
         <div class="main-container" id="content">
 
             <div class="image-container">
                 <div class="cloud-image1">
-                    <img src="assists/images/cloud1.png" alt="">
+                    <img src="assists/svg/Vector.svg" alt="">
                 </div>
                 <div class="cloud-image2">
-                    </aside>
+                    <img src="assists/svg/Vector.svg">
+                </div>
+                <div class="cloud-image3">
                     <img src="assists/svg/Vector.svg">
                 </div>
                 <div class="Isolation-img">
                     <img src="assists/images/Isolation_Mode.png" alt="">
                 </div>
 
-                <div class="text-container">
-                    <div class="inner-image">
-                        <img src="./assists/images/image9.png" alt="">
-                    </div>
-                    <p>Create your little one's very own lullaby!</p>
-                    <p class="p">Sung With Love, <span>& POWERED BY AI</span></p>
+                <div class="logo-bx">
+                    <img src="./assists/images/image9.png" alt="">
+                </div>
+
+
+                <div class="text-bx">
+                    <p class="ai-text">Create your little one's very own lullaby!
+                        <br>Sung With Love, <img src="https://mylullaby.ai/assets/images/ai.png" alt="">
+                    </p>
 
 
                     <button class="start-btn" id="startBtn">
                         Start
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
-
                 </div>
-            </div>
-
-
-
-            <div class="footer d-flex justify-content-between ">
-                <div class="">
-                    <span id="Privacy-Policy">Privacy Policy</span>
-                    <span id="Terms-Conditions">T&C</span>
-                </div>
-                <div>
-                    <span>©2024, Johnsons Baby</span>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="SignIn-Page  common-section d-none">
@@ -600,6 +114,9 @@
                             </label>
                         </div>
 
+                        <div class="hidden-div2">
+                            <p>All values are necessary!</p>
+                        </div>
 
                         <button type="submit" class="start-button" id="startBtn">
                             Start
@@ -616,15 +133,6 @@
             </div>
 
 
-        </div>
-        <div class="footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span>T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
         </div>
     </section>
 
@@ -688,7 +196,12 @@
 
 
                         </div>
-
+                        <div class="baby-name">
+                            <p>Please enter your baby\'s name.</p>
+                        </div>
+                        <div class="Teddy-selection-validation">
+                            <p>Please select a teddy before continuing.</p>
+                        </div>
 
                         <button type="submit" class="start-button">
                             Start
@@ -705,15 +218,6 @@
             </div>
 
 
-        </div>
-        <div class="footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span>T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
         </div>
     </section>
 
@@ -764,6 +268,13 @@
                         </div>
                     </div>
 
+
+
+                    <div class="choice-box">
+                        <p>Please select any box before continuing.</p>
+                    </div>
+
+
                     <button type="submit" class="start-button" id="choice-btn">
                         Start
                         <i class="fa-solid fa-arrow-right"></i>
@@ -780,15 +291,6 @@
             <img src="assists/images/Hearts.png" alt="">
         </div>
 
-        <div class="footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
     </section>
 
 
@@ -831,15 +333,6 @@
                     Policy.</p>
             </div>
 
-        </div>
-        <div class="privacy-footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
         </div>
 
     </section>
@@ -901,15 +394,7 @@
         </div>
 
 
-        <div class="privacy-footer d-flex justify-content-between ">
-            <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
-            </div>
-            <div>
-                <span>©2024, Johnsons Baby</span>
-            </div>
-        </div>
+
     </section>
 
 
@@ -923,32 +408,68 @@
                 <div class="logo">
                     <img src="assists/images/image9.png" alt="">
                 </div>
+                <div class="completeHearts">
+                    <img src="assists/images/completeHearts.png" alt="">
+                </div>
             </div>
 
             <div class="video">
                 <div class="video-container">
-                    <img src="assists/images/completelogo.png" alt="">
+                    <img src="assists/images/twinkleThumbnail.jpg" alt="" class="thumbnail">
+                    <div class="play-img">
+                        <div class="start-img">
+                        <img src="assists/images/start.png" alt="">
+                        </div>
+                    </div>
+                    <video class="main-video" controls style="display: none;">
+                        <source src="assists/video/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+
+                    <div class="buttons">
+                        <div class="btns">
+                            <button type="submit" class="download-button">
+                                Download
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+
+                            <button type="submit" class="share-button">
+                                Share Link
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                        <div class="text">
+                            <p>Loved creating? Create another</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
 
         </div>
 
-        <div class="privacy-footer d-flex justify-content-between ">
+
+    </section>
+
+    <section class="footer-section">
+        <div class="footer d-flex justify-content-between ">
             <div class="">
-                <span id="Privacy-Policy">Privacy Policy</span>
-                <span id="T&C">T&C</span>
+                <span id="Home-Privacy-Policy">Privacy Policy</span>
+                <span id="Terms-Conditions">T&C</span>
             </div>
             <div>
                 <span>©2024, Johnsons Baby</span>
             </div>
         </div>
+        </div>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 
->>>>>>> a796da0 (files added)
+
 </html>
