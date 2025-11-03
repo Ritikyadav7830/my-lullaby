@@ -116,18 +116,19 @@
     }
 
     .video-container {
-           position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        box-sizing: border-box;
     }
 
     .download-button {
         padding: 5px 11px;
     }
+
     .share-button {
         padding: 5px 11px;
     }
@@ -138,9 +139,11 @@
 
 }
 
+
+
 /* Tablet devices ke liye media query */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
- .video-container {
-    width: 55%;
-}
+@media (min-width: 700px) and (max-width: 1024px) {
+    .video-container {
+        width: 65%;
+    }
 }
