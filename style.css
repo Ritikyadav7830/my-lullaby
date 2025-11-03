@@ -51,7 +51,10 @@ body {
     top: 7%;
     left: 22%;
 }
-
+.heart img {
+    display: block;
+    width: 100%;
+}
 .cloud-image1 {
     position: absolute;
     width: 33%;
