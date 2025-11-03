@@ -481,16 +481,17 @@ input[type="number"]:focus {
 
 .blue-Arrow {
     display: none;
-    width: 100.52129px;
+    width: 90.52129px;
     height: 89.52129px;
-    top: 20%;
-    left: 19%;
-    opacity: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .Blue-Arrow {
-  display: none;
+    display: none;
     width: 90.52129px;
     height: 89.52129px;
     position: absolute;
@@ -512,7 +513,7 @@ input[type="number"]:focus {
 }
 
 .yellow-Arrow {
-   display: none;
+    display: none;
     width: 90.52129px;
     height: 89.52129px;
     position: absolute;
@@ -524,12 +525,13 @@ input[type="number"]:focus {
 
 .pink-Arrow {
     display: none;
-    width: 100.52129px;
+    width: 90.52129px;
     height: 89.52129px;
-    top: 20%;
-    left: 19%;
-    opacity: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .Pink-Arrow {
