@@ -191,6 +191,7 @@ body {
     background-color: #8FC9E9 !important;
     position: relative;
     overflow: auto;
+    margin-bottom: 76px;
 }
 
 .signIn-container {
