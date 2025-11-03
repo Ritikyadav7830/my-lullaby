@@ -51,101 +51,112 @@
 
 
     .blue-Arrow {
-        width: 86.52129px;
-        height: 89.52129px;
-        top: 22%;
-        left: 21%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .pink-Arrow {
-        width: 86.52129px;
-        height: 89.52129px;
-        top: 22%;
-        left: 21%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .Pink-Arrow {
         display: none;
         width: 70.52129px;
         height: 89.52129px;
-        top: 23%;
-        left: 22%;
-        opacity: 1;
         position: absolute;
-    }
-
-    .skyBlue-Arrow {
-        display: none;
-        width: 70.52129px;
-        height: 89.52129px;
-        top: 23%;
-        left: 22%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .Blue-Arrow {
-        display: none;
-        width: 70.52129px;
-        height: 89.52129px;
-        top: 23%;
-        left: 22%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .yellow-Arrow {
-        display: none;
-        width: 70.52129px;
-        height: 89.52129px;
-        top: 23%;
-        left: 22%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-    }
-
-    .video-container {
-        position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
-        width: 85%;
         transform: translate(-50%, -50%);
-        text-align: center;
         box-sizing: border-box;
     }
 
-    .download-button {
-        padding: 5px 11px;
-    }
 
-    .share-button {
-        padding: 5px 11px;
-    }
-
-    .buttons {
-        margin: 0;
-    }
-
-    :root {
-    --vh: 100%;
-  }
-
-  .common-section {
-    min-height: calc(var(--vh, 1vh) * 100);
-  }
+.pink-Arrow {
+    display: none;
+    width: 70.52129px;
+    height: 89.52129px;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
+
+.Pink-Arrow {
+    display: none;
+    width: 70.52129px;
+    height: 89.52129px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+
+.skyBlue-Arrow {
+    display: none;
+    width: 70.52129px;
+    height: 89.52129px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.Blue-Arrow {
+    display: none;
+    width: 70.52129px;
+    height: 89.52129px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.yellow-Arrow {
+    display: none;
+    width: 70.52129px;
+    height: 89.52129px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.download-button {
+    padding: 5px 11px;
+}
+
+.share-button {
+    padding: 5px 11px;
+}
+
+.buttons {
+    margin: 0;
+}
+
+:root {
+    --vh: 100%;
+}
+
+.common-section {
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+}
 
 
 /* Tablet devices ke liye media query */
@@ -153,12 +164,12 @@
     .video-container {
         width: 65%;
     }
+
     :root {
-    --vh: 100%;
-  }
+        --vh: 100%;
+    }
 
-  .common-section {
-    min-height: calc(var(--vh, 1vh) * 100);
-  }
+    .common-section {
+        min-height: calc(var(--vh, 1vh) * 100);
+    }
 }
-
