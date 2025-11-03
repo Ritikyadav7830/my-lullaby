@@ -3,13 +3,14 @@
     padding: 0;
 }
 
-html, body {
-  height: 100%;
-  overflow-x: hidden;
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-  overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 .main-container {
@@ -191,7 +192,6 @@ body {
     background-color: #8FC9E9 !important;
     position: relative;
     overflow: auto;
-    margin-bottom: 76px;
 }
 
 .signIn-container {
@@ -490,33 +490,36 @@ input[type="number"]:focus {
 }
 
 .Blue-Arrow {
-    display: none;
+  display: none;
     width: 90.52129px;
     height: 89.52129px;
-    top: 23%;
-    left: 23%;
-    opacity: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .skyBlue-Arrow {
     display: none;
     width: 90.52129px;
     height: 89.52129px;
-    top: 23%;
-    left: 23%;
-    opacity: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .yellow-Arrow {
-    display: none;
+   display: none;
     width: 90.52129px;
     height: 89.52129px;
-    top: 23%;
-    left: 23%;
-    opacity: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .pink-Arrow {
@@ -533,10 +536,11 @@ input[type="number"]:focus {
     display: none;
     width: 90.52129px;
     height: 89.52129px;
-    top: 23%;
-    left: 23%;
-    opacity: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 
@@ -788,7 +792,7 @@ input[type="number"]:focus {
     box-sizing: border-box;
 }
 
-.img-container{
+.img-container {
     position: relative;
     width: 100%;
     border: 2px solid rgb(0, 183, 255);
