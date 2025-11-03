@@ -45,6 +45,13 @@ body {
     box-sizing: border-box;
 }
 
+.heart {
+    position: absolute;
+    width: 15%;
+    top: 7%;
+    left: 22%;
+}
+
 .cloud-image1 {
     position: absolute;
     width: 33%;
