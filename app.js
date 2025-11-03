@@ -1,6 +1,9 @@
 
  document.getElementById('startBtn').addEventListener ('click', function () {
 
+   const formData = document.getElementById('formDetails');
+
+    formData.reset();
       showScreen(".SignIn-Page")
     
   });
@@ -40,11 +43,14 @@ document.querySelector('.SignIn-arrow').addEventListener ('click', function () {
     const hiddenValue = document.querySelector('.hidden-div2');
        const hiddenDiv = document.querySelector('.hidden-div');
      const mobileInput = document.getElementById('mobile');
+     
 
 
+      
      hiddenValue.style.display = 'none';
       mobileInput.style.borderColor = '#ccc';
    hiddenDiv.style.display = 'none';
+  
   showScreen(".home-Page")
   
 });
@@ -390,8 +396,8 @@ function showScreen(showScreen){
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  const qrSection = document.getElementById("qrSection");
-  if (window.innerWidth > 1024) {
+ 
+  if (window.innerWidth > 1000) {
     showScreen(".qr");
   } else {
     showScreen(".home-Page");
@@ -444,37 +450,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
      
      const hiddenValue = document.querySelector('.hidden-div2');
-  const formData = document.getElementById('formDetails');
-   const hiddenDiv = document.querySelector('.hidden-div');
+     const formData = document.getElementById('formDetails');
+     const hiddenDiv = document.querySelector('.hidden-div');
      const mobileInput = document.getElementById('mobile');
-      const Babyform = document.getElementById('BabyformDetails');
-  const blueArrow = document.querySelector('.blue-Arrow');
-const pinkArrow = document.querySelector('.pink-Arrow');
- const babyHiddenDiv = document.querySelector('.hidden-baby-div');
- const hiddenBabyName = document.querySelector('.baby-name');
-   const TeddySelectionValidation = document.querySelector('.Teddy-selection-validation');
-  const nameInput = document.getElementById('BabyName');
-  const charCount = document.getElementById('charCount');
-  const choiceBox = document.querySelector('.choice-box');
-   const video = document.querySelector(".main-video");
+     const Babyform = document.getElementById('BabyformDetails');
+     const blueArrow = document.querySelector('.blue-Arrow');
+     const pinkArrow = document.querySelector('.pink-Arrow');
+     const babyHiddenDiv = document.querySelector('.hidden-baby-div');
+     const hiddenBabyName = document.querySelector('.baby-name');
+     const TeddySelectionValidation = document.querySelector('.Teddy-selection-validation');
+     const nameInput = document.getElementById('BabyName');
+     const charCount = document.getElementById('charCount');
+     const choiceBox = document.querySelector('.choice-box');
+     const video = document.querySelector(".main-video");
 
 
-   video.pause();
- charCount.textContent = `${this.value.length} / 8`;
- nameInput.style.borderColor = '#ccc';
-    babyHiddenDiv.style.display = 'none';
-    hiddenBabyName.style.display = 'none';
-    TeddySelectionValidation.style.display = 'none';
-   blueArrow.style.display = 'none';
-   pinkArrow.style.display = 'none';
-   choiceBox.style.display = 'none';
+     video.pause();
+     charCount.textContent = `${this.value.length} / 8`;
+     nameInput.style.borderColor = '#ccc';
+     babyHiddenDiv.style.display = 'none';
+     hiddenBabyName.style.display = 'none';
+     TeddySelectionValidation.style.display = 'none';
+     blueArrow.style.display = 'none';
+     pinkArrow.style.display = 'none';
+     choiceBox.style.display = 'none';
 
 
-  formData.reset();
-  Babyform.reset();
-  mobileInput.style.borderColor = '#ccc';
-      hiddenValue.style.display = 'none';
-   hiddenDiv.style.display = 'none';
+     formData.reset();
+     Babyform.reset();
+     mobileInput.style.borderColor = '#ccc';
+     hiddenValue.style.display = 'none';
+     hiddenDiv.style.display = 'none';
 
 
     
@@ -484,30 +490,30 @@ const pinkArrow = document.querySelector('.pink-Arrow');
 
 
 
-const pickSection = document.querySelector('.Pick-a-lulls-by');
-const loadingOverlay = pickSection.querySelector('.loading-overlay');
+   const pickSection = document.querySelector('.Pick-a-lulls-by');
+   const loadingOverlay = pickSection.querySelector('.loading-overlay');
 
 
-function showLoading() {
-  pickSection.classList.add('loading-active');
-  loadingOverlay.classList.remove('d-none');
-}
+     function showLoading() {
+     pickSection.classList.add('loading-active');
+     loadingOverlay.classList.remove('d-none');
+     }
 
 
-function hideLoading() {
-  pickSection.classList.remove('loading-active');
-  loadingOverlay.classList.add('d-none');
+     function hideLoading() {
+     pickSection.classList.remove('loading-active');
+     loadingOverlay.classList.add('d-none');
 
-  showScreen('.Complete');
-}
+     showScreen('.Complete');
+     }
 
-// Example: जब section load हो
+  
 
 
-function openPickSection() {
-  showScreen('.Pick-a-lulls-by');
-  showLoading();
+     function openPickSection() {
+     showScreen('.Pick-a-lulls-by');
+     showLoading();
 
-  // 3 सेकंड बाद loading hide और Complete section दिखाओ
-  setTimeout(hideLoading, 3000);
+ 
+     setTimeout(hideLoading, 3000);
 }
