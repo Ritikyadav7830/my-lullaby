@@ -137,6 +137,13 @@
         margin: 0;
     }
 
+    :root {
+    --vh: 100%;
+  }
+
+  .common-section {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
 }
 
 
@@ -146,4 +153,12 @@
     .video-container {
         width: 65%;
     }
+    :root {
+    --vh: 100%;
+  }
+
+  .common-section {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
 }
+
