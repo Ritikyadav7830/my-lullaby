@@ -769,7 +769,7 @@ input[type="number"]:focus {
 }
 
 .video-container {
-       position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 85%;
@@ -778,38 +778,43 @@ input[type="number"]:focus {
     box-sizing: border-box;
 }
 
-.video-container img {
+.img-container{
+    position: relative;
+    width: 100%;
+    border: 2px solid rgb(0, 183, 255);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img-container img {
     display: block;
     width: 100%;
 }
 
 
 .play-img {
-      position: fixed;
-    /* top: 50%; */
-    /* left: 83%; */
-    right: -7%;
-    bottom: 32%;
-    transform: translate(-50%, -50%);
-    border: 2px solid white;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     border-radius: 50%;
     background: white;
+    padding: 15px;
 
 }
 
 .start-img {
     width: 100%;
-        padding: 15px;
+    padding: 15px;
 }
 
-.start-img  img {
+.start-img img {
     display: block;
     width: 100%;
 }
 
 .main-video {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 section {
@@ -924,7 +929,7 @@ section {
 .home-btn {
     width: 100%;
     height: 20%;
-     position: absolute;
+    position: absolute;
     top: 85%;
     left: 50%;
     width: 85%;
@@ -932,12 +937,13 @@ section {
     text-align: center;
     box-sizing: border-box;
 }
-.home-btn button{
+
+.home-btn button {
     border: none;
     outline: none;
     background-color: #FFFFFF;
     border-radius: 30px;
-     color: #005EB8;
+    color: #005EB8;
     font-size: 1.2rem;
     height: 45px;
     font-weight: 500;
@@ -947,23 +953,24 @@ section {
 }
 
 .loading-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.7) 80%);
-backdrop-filter: blur(5px);
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 30; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.7) 80%);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
 }
 
 .Pick-a-lulls-by.loading-active {
-  opacity: 0.8; 
-  pointer-events: none; /* disable interaction */
+    opacity: 0.8;
+    pointer-events: none;
+    /* disable interaction */
 }
 
 
@@ -980,21 +987,45 @@ backdrop-filter: blur(5px);
 
 
 @keyframes myAnimation {
-  0%   {color: #BDE6FA; left:0%; top:31%;}
-  25%  {color: #BDE6FA; left:25%; top:31%;}
-  50%  {color: #BDE6FA; left:25%; top:31%;}
-  75%  {color: #BDE6FA; left:0%; top:31%;}
-  100% {color: #BDE6FA; left:0%; top:31%;}
+    0% {
+        color: #BDE6FA;
+        left: 0%;
+        top: 31%;
+    }
+
+    25% {
+        color: #BDE6FA;
+        left: 25%;
+        top: 31%;
+    }
+
+    50% {
+        color: #BDE6FA;
+        left: 25%;
+        top: 31%;
+    }
+
+    75% {
+        color: #BDE6FA;
+        left: 0%;
+        top: 31%;
+    }
+
+    100% {
+        color: #BDE6FA;
+        left: 0%;
+        top: 31%;
+    }
 }
 
 .cloud-image1 {
-  width: 33%;
-  height: 10%;
-  position: relative;
-   color: #BDE6FA;
-  animation-name: myAnimation;
-  animation-duration: 4s;
-  animation-iteration-count: 3000;
+    width: 33%;
+    height: 10%;
+    position: relative;
+    color: #BDE6FA;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: 3000;
 }
 
 .cloud-image2 {
@@ -1003,16 +1034,40 @@ backdrop-filter: blur(5px);
     height: 15%;
     color: #BDE6FA;
     animation-name: myAnimation2;
-  animation-duration: 4s;
-  animation-iteration-count: 3000;
+    animation-duration: 4s;
+    animation-iteration-count: 3000;
 }
 
 @keyframes myAnimation2 {
-  0%   {color: #BDE6FA;  right:0%; top:20%;}
-  25%  {color: #BDE6FA; right: 25%; top:20%;}
-  50%  {color: #BDE6FA; right: 25%; top:20%;}
-  75%  {color: #BDE6FA; right: 25%; top:20%;}
-  100% {color: #BDE6FA; right: 0%; top:20%;}
+    0% {
+        color: #BDE6FA;
+        right: 0%;
+        top: 20%;
+    }
+
+    25% {
+        color: #BDE6FA;
+        right: 25%;
+        top: 20%;
+    }
+
+    50% {
+        color: #BDE6FA;
+        right: 25%;
+        top: 20%;
+    }
+
+    75% {
+        color: #BDE6FA;
+        right: 25%;
+        top: 20%;
+    }
+
+    100% {
+        color: #BDE6FA;
+        right: 0%;
+        top: 20%;
+    }
 }
 
 .cloud-image3 {
@@ -1021,34 +1076,81 @@ backdrop-filter: blur(5px);
     height: 15%;
     color: #BDE6FA;
     animation-name: myAnimation3;
-  animation-duration: 4s;
-  animation-iteration-count: 3000;
+    animation-duration: 4s;
+    animation-iteration-count: 3000;
 }
 
 @keyframes myAnimation3 {
-  0%   {color: #BDE6FA;  right:17%; top: 30%;;}
-  25%  {color: #BDE6FA; right: 2%; top:30%;}
-  50%  {color: #BDE6FA; right: 2%; top:30%;}
-  75%  {color: #BDE6FA; right: 17%; top:30%;}
-  100% {color: #BDE6FA; right: 17%; top:30%;}
+    0% {
+        color: #BDE6FA;
+        right: 17%;
+        top: 30%;
+        ;
+    }
+
+    25% {
+        color: #BDE6FA;
+        right: 2%;
+        top: 30%;
+    }
+
+    50% {
+        color: #BDE6FA;
+        right: 2%;
+        top: 30%;
+    }
+
+    75% {
+        color: #BDE6FA;
+        right: 17%;
+        top: 30%;
+    }
+
+    100% {
+        color: #BDE6FA;
+        right: 17%;
+        top: 30%;
+    }
 }
 
 .Isolation-img {
-    bottom: -1%;
     left: 50%;
     width: 30%;
     max-width: 150px;
-    z-index: 1;
     animation-name: myAnimation4;
-  animation-duration: 4s;
-  animation-iteration-count: 3000;
-  transform: rotate(0deg);
+    animation-duration: 4s;
+    animation-iteration-count: 3000;
+    transform: rotate(0deg);
 }
 
 @keyframes myAnimation4 {
-  0%   {color: #BDE6FA; transform: rotate(0deg); bottom: -1%;}
-  25%  {color: #BDE6FA; transform: rotate(10deg);bottom: -1%;}
-  50%  {color: #BDE6FA; transform: rotate(10deg); bottom: -1%;}
-  75%  {color: #BDE6FA; transform: rotate(0deg); bottom: -1%;}
-  100% {color: #BDE6FA; transform: rotate(0deg); bottom: -1%;}
+    0% {
+        color: #BDE6FA;
+        transform: rotate(0deg);
+        bottom: -1%;
+    }
+
+    25% {
+        color: #BDE6FA;
+        transform: rotate(10deg);
+        bottom: -1%;
+    }
+
+    50% {
+        color: #BDE6FA;
+        transform: rotate(10deg);
+        bottom: -1%;
+    }
+
+    75% {
+        color: #BDE6FA;
+        transform: rotate(0deg);
+        bottom: -1%;
+    }
+
+    100% {
+        color: #BDE6FA;
+        transform: rotate(0deg);
+        bottom: -1%;
+    }
 }
